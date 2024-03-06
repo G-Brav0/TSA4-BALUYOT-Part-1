@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/035/796/337/non_2x/ai-generated-an-aesthetic-studio-coffee-shop-interior-featuring-a-coffee-cup-and-plant-free-photo.jpg);
+    background-size: 1550px 750px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    animation: glowing 2s infinite;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+@keyframes glowing {
+    0% {
+        color: #151618;
+        text-shadow: 0 0 5px #c0c0c5;
+    }
+    50% {
+        color: #8b5413;
+        text-shadow: 0 0 10px #d3d3d3;
+    }
+    100% {
+        color: #151618;
+        text-shadow: 0 0 5px #c0c0c5;
+    }
+}
+
+/* main menu button*/
+button{
+    padding: 12px 20px;
+    border: 2px solid #000;
+    border-radius: 9px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out; 
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 60px;
+    font-size: 15px;
+    color: gold;
+    background-color: brown;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.menu-cards{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.menu-box{
+    width: 950px;
+    height: 550px;
+    padding: 2rem 1rem;
+    margin: 15px;
+    position: relative;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(to bottom, rgba(167, 107, 4, 0.5), rgb(115, 96, 110, 2));
+    border-radius: 85px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-box:hover{
+    transform: translateY(20px);
+} 
+
+.menu-box:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;   
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.menu-box:hover:before{
+    opacity: 1;
+}
+
+.menu-box img{
+    width: 27%;
+    height: 85%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info{
+    padding: 5px 20px;
+    width: 670px;
+    text-align: justify;
+    margin-bottom: 300px;
+    position: absolute;
+    color: #fff;
+    transform: translateX(245px);
+}
+
+.menu-box .info h1{
+    margin: 0px;
+    color: #000000;
+}
+
+.menu-box .info p{
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color: #000000;
+}
